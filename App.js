@@ -1,11 +1,6 @@
-import {createStackNavigator} from 'react-navigation-stack';
-import {createAppContainer} from 'react-navigation';
-import Home from './Views/Home';
-import Profile from './Views/Profile';
+import React from 'react';
+import AppNavigator from './Navigation/AppNavigator';
 
-const MainNavigator = createStackNavigator({
-  Home: {screen: Home},
-  Profile: {screen: Profile},
-});
-
-export default createAppContainer(MainNavigator);
+export default function App() {
+  return <AppNavigator />;
+}

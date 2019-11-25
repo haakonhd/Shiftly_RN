@@ -17,6 +17,13 @@ export const textStyle = StyleSheet.create({
   },
 });
 
+export const iconStyle = StyleSheet.create({
+  icon: {
+    width: 24,
+    height: 24,
+  },
+});
+
 export const tileStyle = StyleSheet.create({
   tileGrid: {
     flex: 1,

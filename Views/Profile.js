@@ -1,10 +1,25 @@
 import React, {Fragment, Component} from 'react';
-import {SafeAreaView, ScrollView, View, Text, StatusBar} from 'react-native';
-import {textStyle, tileStyle} from '../Styles';
+import {
+  SafeAreaView,
+  ScrollView,
+  View,
+  Text,
+  StatusBar,
+  Image,
+} from 'react-native';
+import * as styles from '../Styles';
+import ScreenName from '../Components/ScreenName';
+import Header from '../Components/Header.js';
 
 export default class Profile extends React.Component {
   static navigationOptions = {
-    title: 'Profile',
+    drawerLabel: 'Profile',
+    drawerIcon: ({tintColor}) => (
+      <Image
+        // source={require('./chats-icon.png')}
+        style={[styles.iconStyle.icon, {tintColor: tintColor}]}
+      />
+    ),
   };
   render() {
     return (
@@ -13,7 +28,7 @@ export default class Profile extends React.Component {
         <SafeAreaView>
           <ScrollView contentInsetAdjustmentBehavior="automatic">
             <View>
-              <Text> "Profile" </Text>
+              <Text> "Profileee" </Text>
             </View>
           </ScrollView>
         </SafeAreaView>

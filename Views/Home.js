@@ -2,6 +2,8 @@ import React, {Fragment} from 'react';
 import {SafeAreaView, ScrollView, View, StatusBar, Button} from 'react-native';
 import {tileStyle} from '../Styles';
 import Tile from '../Components/Tile';
+import ScreenName from '../Components/ScreenName';
+import Header from '../Components/Header.js';
 
 export default class Home extends React.Component {
   static navigationOptions = {

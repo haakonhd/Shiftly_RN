@@ -1,25 +1,10 @@
 import React, {Fragment, Component} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  Image,
-} from 'react-native';
-import * as styles from '../Styles';
-import ScreenName from '../Components/ScreenName';
-import Header from '../Components/Header.js';
+import {SafeAreaView, ScrollView, View, Text, StatusBar} from 'react-native';
+// import Styles from '../Styles';
 
 export default class Profile extends React.Component {
   static navigationOptions = {
     drawerLabel: 'Profile',
-    drawerIcon: ({tintColor}) => (
-      <Image
-        // source={require('./chats-icon.png')}
-        style={[styles.iconStyle.icon, {tintColor: tintColor}]}
-      />
-    ),
   };
   render() {
     return (
@@ -28,16 +13,10 @@ export default class Profile extends React.Component {
         <SafeAreaView>
           <ScrollView contentInsetAdjustmentBehavior="automatic">
             <View>
-              <Text> "Profileee" </Text>
+              <Text> Profile </Text>
             </View>
           </ScrollView>
         </SafeAreaView>
-
-        {/*<Navigator*/}
-        {/*  initialRoute={{title: 'Awesome Scene', index: 0}}*/}
-        {/*  renderScene={(route, navigator) => <Text>Hello {route.title}!</Text>}*/}
-        {/*  style={{padding: 100}}*/}
-        {/*/>*/}
       </Fragment>
     );
   }

@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import {StyleSheet} from 'react-native';
 
-export const textStyle = StyleSheet.create({
+const Styles = StyleSheet.create({
   tileTextGeneral: {
     color: 'white',
   },
-
   tileHeader: {
     color: 'white',
     fontSize: 20,
@@ -15,16 +14,12 @@ export const textStyle = StyleSheet.create({
     color: 'white',
     fontSize: 16,
   },
-});
 
-export const iconStyle = StyleSheet.create({
   icon: {
     width: 24,
     height: 24,
   },
-});
 
-export const tileStyle = StyleSheet.create({
   tileGrid: {
     flex: 1,
     flexDirection: 'column',
@@ -46,4 +41,18 @@ export const tileStyle = StyleSheet.create({
     flex: 1,
     margin: 10,
   },
+
+  header: {
+    paddingTop: 20,
+    backgroundColor: 'whitesmoke',
+  },
+
+  trigger: {
+    marginLeft: 10,
+    borderRadius: 30,
+    width: 60,
+    height: 40,
+  },
 });
+
+export default Styles;

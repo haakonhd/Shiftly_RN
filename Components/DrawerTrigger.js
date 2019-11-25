@@ -1,30 +1,22 @@
 import React from 'react';
 import {TouchableOpacity, StyleSheet} from 'react-native';
-// import {Ionicons} from '@expo/vector-icons';
+import {Icon} from 'react-native-elements';
 import {withNavigation} from 'react-navigation';
 import {DrawerActions} from 'react-navigation-drawer';
+import Styles from '../Styles';
 
 class DrawerTrigger extends React.Component {
   render() {
     return (
       <TouchableOpacity
-        style={styles.trigger}
+        style={Styles.trigger}
         onPress={() => {
           this.props.navigation.dispatch(DrawerActions.openDrawer());
         }}>
-        {/*<Ionicons name={'md-arrow-round-forward'} size={47} color={'grey'} />*/}
+        <Icon name="bars" size={30} type="font-awesome" color="#33ccff" />
       </TouchableOpacity>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  trigger: {
-    marginLeft: 27.5,
-    borderRadius: 30,
-    width: 60,
-    height: 60,
-  },
-});
 
 export default withNavigation(DrawerTrigger);

@@ -2,11 +2,8 @@ import React, {Component} from 'react';
 import {StyleSheet} from 'react-native';
 
 const Styles = StyleSheet.create({
-  tileTextGeneral: {
-    color: 'white',
-  },
   tileHeader: {
-    color: 'white',
+    color: '#f6f6db',
     fontSize: 20,
   },
 
@@ -36,22 +33,52 @@ const Styles = StyleSheet.create({
   },
 
   tile: {
-    backgroundColor: 'skyblue',
+    backgroundColor: '#4295c2',
     aspectRatio: 1,
     flex: 1,
     margin: 10,
   },
 
   header: {
-    paddingTop: 20,
-    backgroundColor: 'whitesmoke',
+    paddingHorizontal: 10,
+    paddingVertical: 20,
+    backgroundColor: '#2a5f7c',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+
+  headerText: {
+    fontSize: 35,
+    fontFamily: 'pacifico',
+    color: '#eaeac0',
   },
 
   trigger: {
-    marginLeft: 10,
-    borderRadius: 30,
+    marginHorizontal: 10,
     width: 60,
-    height: 40,
+  },
+
+  sideMenuContainer: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    paddingTop: 20,
+  },
+
+  sideMenuProfileIcon: {
+    resizeMode: 'center',
+    width: 150,
+    height: 150,
+    marginTop: 20,
+    borderRadius: 150 / 2,
+  },
+
+  navBarDivider: {
+    width: '100%',
+    height: 1,
+    backgroundColor: '#e2e2e2',
+    marginTop: 15,
   },
 });
 

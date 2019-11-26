@@ -8,6 +8,7 @@ class Header extends React.Component {
     return (
       <View style={Styles.header}>
         <DrawerTrigger />
+        <Text style={Styles.headerText}>Shiftly</Text>
       </View>
     );
   }

@@ -13,7 +13,7 @@ class DrawerTrigger extends React.Component {
         onPress={() => {
           this.props.navigation.dispatch(DrawerActions.openDrawer());
         }}>
-        <Icon name="bars" size={30} type="font-awesome" color="#33ccff" />
+        <Icon name="bars" size={30} type="font-awesome" color={Styles.headerText.color} />
       </TouchableOpacity>
     );
   }

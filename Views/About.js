@@ -3,9 +3,9 @@ import {SafeAreaView, ScrollView, View, Text, StatusBar} from 'react-native';
 import Header from '../Components/Header';
 // import Styles from '../Styles';
 
-export default class Profile extends React.Component {
+export default class About extends React.Component {
   static navigationOptions = {
-    drawerLabel: 'Profile',
+    drawerLabel: 'About',
   };
   render() {
     return (
@@ -15,7 +15,7 @@ export default class Profile extends React.Component {
         <SafeAreaView>
           <ScrollView contentInsetAdjustmentBehavior="automatic">
             <View>
-              <Text> Profile </Text>
+              <Text> About </Text>
             </View>
           </ScrollView>
         </SafeAreaView>

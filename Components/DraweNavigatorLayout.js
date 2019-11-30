@@ -15,13 +15,28 @@ export default class DrawerNavigationLayout extends Component {
         screenToNavigate: 'Home',
       },
       {
-        navOptionThumb: 'user',
-        navOptionName: 'Profile',
+        navOptionThumb: 'clipboard',
+        navOptionName: 'Schedule',
         screenToNavigate: 'Profile',
       },
       {
+        navOptionThumb: 'calendar',
+        navOptionName: 'Calendar',
+        screenToNavigate: 'About',
+      },
+      {
+        navOptionThumb: 'list-alt',
+        navOptionName: 'My shift plan',
+        screenToNavigate: 'About',
+      },
+      {
+        navOptionThumb: 'user',
+        navOptionName: 'My profile',
+        screenToNavigate: 'About',
+      },
+      {
         navOptionThumb: 'info',
-        navOptionName: 'About',
+        navOptionName: 'About Shiftly',
         screenToNavigate: 'About',
       },
     ];

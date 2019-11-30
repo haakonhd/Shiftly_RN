@@ -2,11 +2,6 @@ import React, {Component} from 'react';
 import {StyleSheet} from 'react-native';
 
 const Styles = StyleSheet.create({
-  tileHeader: {
-    color: '#f6f6db',
-    fontSize: 20,
-  },
-
   tileBody: {
     color: 'white',
     fontSize: 16,
@@ -22,21 +17,32 @@ const Styles = StyleSheet.create({
     flexDirection: 'column',
     flexWrap: 'nowrap',
     marginTop: 10,
+    alignSelf: 'center',
+    aspectRatio: 1,
+    alignItems: 'center',
   },
 
   tileRow: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    paddingLeft: 10,
-    paddingRight: 10,
+    paddingHorizontal: 10,
+    height: 30,
+    flexGrow: 1,
+    maxWidth: 400,
+    margin: 3,
   },
 
   tile: {
-    backgroundColor: '#4295c2',
     aspectRatio: 1,
+    padding: 2,
     flex: 1,
-    margin: 10,
+    margin: 5,
+    backgroundColor: '#4295c2',
+    maxWidth: 200,
+  },
+
+  tileHeader: {
+    color: '#f6f6db',
+    fontSize: 20,
   },
 
   header: {
